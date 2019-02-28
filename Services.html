@@ -11,15 +11,42 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="mystyle.css">
         <link rel="stylesheet" type="text/css" href="Grids.css">
-        <link rel="stylesheet" type="text/css" href="OrangeButton.css">
         <style>
+            
+            .purchase{
+                position:absolute;
+                transition: .5s ease;
+                right: 55px;
+                top: 50px;
+                background-color: #e1811f;
+                color: snow;
+                text-align: left;
+                font-size: 20px;
+                cursor: pointer;
+                border-collapse:collapse;
+                border:none;
+                padding:14px 40px;
+                border-radius: 4px;
+            }   
+            .button{
+                position:absolute;
+                transition: .5s ease;
+                left: 55px;
+                top: 50px;
+                    
+            }  
+            
+            button:hover{
+                background-color:#fe4e00 !important;
+            }
         </style>
             
     </head>
     <body>
         <header>
             <h1>Our Services</h1>
-            <button type="button" onclick= "window.location.href='HomePage.html'" class='button'>Homepage</button>
+            <button class="button" type="button" onclick= "window.location.href='HomePage.html'" class='button'>Homepage</button>
+            <button class="purchase"type="button" onclick= "window.location.href='Ebus1.php'" class='button'>Purchase Service</button>
         </header>
       
        <div class="grid-container">

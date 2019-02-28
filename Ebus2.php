@@ -18,15 +18,40 @@ $_SESSION['txtTotal'] = $totalValue2;
 <html>
     <head>
         <title>eBusiness 2</title>
+        <link rel="stylesheet" href="mystyle.css" type="text/css" />
+        <link rel="stylesheet" href="OrangeButton.css" type="text/css" />
+        <style>
+            .Enter{
+                color:white;
+            }
+            
+            #btnContinue {
+                background-color: #e1811f;
+                color: snow;
+                text-align: center ;
+                font-size: 20px;
+                cursor: pointer;
+                border-collapse:collapse;
+                border:none;
+                float: center;
+                padding:14px 40px;
+                border-radius: 4px;
+            }   
+            
+        </style>
     </head>
     <body>
+        <header>
+                    <h1>Personal Details</h1>
+                     <button type="button" onclick= "window.location.href='Ebus1.php'" class='button'>Back</button>
+        </header>
         <div class="form">
             <form name="Details" method="post" action="eBus3.php">
                 <center>
                     <table cellspacing="10">
                         <tr>
                             <td><b></b></td>
-                            <td><b>Enter in your details below</b></td>
+                            <td class="Enter"><b>Enter in your details below</b></td>
                         </tr>
                         <tr>
                             <td>Name</td>
@@ -46,7 +71,7 @@ $_SESSION['txtTotal'] = $totalValue2;
                     </table>
                 </center>
                 <center>
-                    <input type="submit" id="btnContinue" id="btnContinue" conclick="" value="Continue"/>
+                    <input type="submit" id="btnContinue" onclick="" value="Continue"/>
                 </center>
             </form>
         </div>
