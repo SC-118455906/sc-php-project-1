@@ -1,0 +1,37 @@
+.grid-container{
+               display: grid;
+               grid-colum-gap: 50px;
+               grid-row-gap: 50px;
+            }
+            
+             .item1{
+              border: 5px solid white;
+              width: 500px;
+              padding: 10px;
+              border-radius: 10px;
+            }
+            .item2{
+              border: 5px solid white;
+              width: 500px;
+              padding: 10px;
+              border-radius: 10px;
+            }
+            .item3{
+              border: 5px solid white;
+              width: 500px;
+              padding: 10px;
+              border-radius: 10px;
+            }
+            .item1{
+                grid-column-start: 1;
+                grid-column-end: 1;
+                margin: 20px;
+            }
+            .item2{
+                grid-column-start: 2;
+                grid-column-end: 2;
+                margin: 20px;
+            }
+            .item3 {
+                margin: 20px;
+            }

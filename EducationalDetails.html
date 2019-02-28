@@ -9,14 +9,8 @@ and open the template in the editor.
         <title>Educational Details</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
         <style>
-            body {
-                background-image: url("Images/WM2.jpg"); 
-                font-family: calibri;
-            }
-            header {
-                display: block;
-            }
             table {
                 border: 1px solid black;
                 border-collapse: collapse; 
@@ -40,13 +34,53 @@ and open the template in the editor.
             tr:nth-child(even) td { background: #F1F1F1; }
             tr:nth-child(odd) td { background: #FEFEFE; }  
             tr td:hover { background: #666; color: #FFF; }  
+            
+            aside{
+                float:right;
+                margin: 0 1.5%;
+                width: 30%;
+            }
+            section{ 
+                float:left;
+                margin: 0 1.5%;
+                width: 63%;
+            }
+            
+            .button{
+                position:absolute;
+                transition: .5s ease;
+                left: 55px;
+                top: 50px;
+                    
+            }  
+            .button:hover{
+                background-color:#fe4e00 !important;
+            }
+            
+            hr{
+                color: #eeeded;
+            }
+            
+            .modules{
+              border: 5px solid white;
+              width: 600px;
+              padding: 10px;
+              border-radius: 10px;
+            }
+            
+            .collegeresults{
+              border: 5px solid white;
+              width: 300px;
+              padding: 5px;
+              border-radius: 10px;
+            }
         </style>
     </head>
     <body>
         <header>
             
         <h1> Educational Details </h1> 
-        
+        <button type="button" onclick= "window.location.href='cv.html'" class='button'>Back to CV</button>
         </header>
         <h3> Second Level Education </h3>
              <a href="http://csncork.ie/">
@@ -55,7 +89,9 @@ and open the template in the editor.
             <p> I attended Coláiste an Spioraid Naoimh from 2012-2018</p>
            
 			
-            <h2> Leaving Cert Results </h2>
+            <h3> <em> Leaving Cert Results </em> </h3>
+            <!-- The CSS code used for styling this table was adapted from the following website: http://cssmenumaker.com/blog/stylish-css-tables-tutorial/ -->
+            <!-- The same code is used for my college results table -->
             <table>
                     <tr>
                             <th>Subject</th>
@@ -108,7 +144,8 @@ and open the template in the editor.
             <p> I am currently in first year in UCC studying Business Information Systems (BIS) </p>
 			
             <br/>
-			
+	    
+            <section class="modules">
             <h3> <em>Modules</em> </h3>
 			
             <ol>
@@ -133,48 +170,49 @@ and open the template in the editor.
                         </ul>
                 </li>
             </ol>	
-			
+            </section>	
             <br/>
-		
-            <h3> <em>College Results</em> </h3>
-            <h4> <u>Semester 1</u> </h4>
-            
-            <table>
-                    <tr>
-                            <th>Subject</th>
-                            <th>Result</th>
-                    </tr>
+            <aside class="collegeresults">
+                <h3> <em>College Results</em> </h3>
+                <h4> <u>Semester 1</u> </h4>
 
-                    <tr>
-                            <td>AC1113</td>
-                            <td>79%</td>
-                    </tr>
+                <table>
+                        <tr>
+                                <th>Subject</th>
+                                <th>Result</th>
+                        </tr>
 
-                    <tr>
-                            <td>ST1023</td>
-                            <td>90%</td>
-                    </tr>
-                    
-                    <tr>
-                            <td>MG1004</td>
-                            <td>78%</td>
-                    </tr>
-                    
-                    <tr>
-                            <td>IS1108</td>
-                            <td>66%</td>
-                    </tr>
+                        <tr>
+                                <td>AC1113</td>
+                                <td>79%</td>
+                        </tr>
 
-                    <tr>
-                            <td>IS1110</td>
-                            <td>88%</td>
-                    </tr>
+                        <tr>
+                                <td>ST1023</td>
+                                <td>90%</td>
+                        </tr>
 
-                    <tr>
-                            <td>IS1112</td>
-                            <td>83%</td>
-                    </tr>
-                    
-            </table>
+                        <tr>
+                                <td>MG1004</td>
+                                <td>78%</td>
+                        </tr>
+
+                        <tr>
+                                <td>IS1108</td>
+                                <td>66%</td>
+                        </tr>
+
+                        <tr>
+                                <td>IS1110</td>
+                                <td>88%</td>
+                        </tr>
+
+                        <tr>
+                                <td>IS1112</td>
+                                <td>83%</td>
+                        </tr>
+
+                </table>
+            </aside>
     </body>
 </html>

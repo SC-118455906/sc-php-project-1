@@ -1,0 +1,28 @@
+ body{
+                font-family: calibri;
+                background-color: #20c997;
+            }
+            
+ header{
+                padding: 30px;
+                text-align: center;
+                background: #212529;
+                color: white;
+                font-size: 20px;
+                border-radius: 4px;
+            }
+.button{
+                background-color: #e1811f;
+                color: snow;
+                text-align: left;
+                font-size: 20px;
+                cursor: pointer;
+                border-collapse:collapse;
+                border:none;
+                float:left;
+                padding:14px 40px;
+                border-radius: 4px;
+            }   
+            h1{
+                color:white;
+            }

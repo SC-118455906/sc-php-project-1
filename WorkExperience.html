@@ -9,64 +9,90 @@ and open the template in the editor.
         <title>Work Experience</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
         <style>
-            body{
-                background-image: url("Images/WM2.jpg");
-            }
+            .volunteering, .workexperience, section{
+              border: 5px solid white;
+              width: 600px;
+              padding: 10px;
+              border-radius: 10px;
+            } 
             
-            section{ 
-                float:left;
-                margin: 0 1.5%;
-                width: 63%;
-            }
-            aside{
+            .volunteering{
                 float:right;
-                margin: 0 1.5%;
-                width: 30%;
             }
             
+            .workexperience{
+                float:left;
+            }
+            
+             .button{
+                position:absolute;
+                transition: .5s ease;
+                left: 55px;
+                top: 50px;
+                    
+            }  
+            .button:hover{
+                background-color:#fe4e00 !important;
+            }
         </style>
     </head>
     <body>
         <header>
             <h1> Work Experience </h1>
+            <button type="button" onclick= "window.location.href='cv.html'" class='button'>Back to CV</button>
         </header>
         
-        <section>
+        <section class='workexperience'>
         <h2> <em>Retail</em> </h2>
         
         <ul type="Dot">
             <li><h4>Catering</h4> 
                 <ul type ="square">
-                    <li>I have experience working in catering as I was employed working in a food truck in Garretstown <br> during the summer of 2016 and also during the summer of 2018 </li>
+                    <li>I have experience working in catering as I was employed working in a food truck in Garretstown during the summer of 2016 and also during the summer of 2018 </li>
                 </ul>
             </li>
             <li> <h4>Shops </h4>
                 <ul type="square">
-                    <li> <p>I am also employed in a concession stand in Páirc Uí Chaoimh on a number of occasions since the summer of 2018.<br> This involves serving customers, inputting transactions at a till and stocking shelves in the shop. </p> </li>                                                                                                                                                                                                                                                                               
+                    <li> <p>I am also employed in a concession stand in Páirc Uí Chaoimh on a number of occasions since the summer of 2018. This involves serving customers, inputting transactions at a till and stocking shelves in the shop. </p> </li>                                                                                                                                                                                                                                                                               
                 </ul>
             </li>
         </ul>
         
         <h2> <em> Work Experience </em> </h2>
-        <p> In 2017 I did my Work Experience in Logitech in Cork. <br>I was involved in a number of projects including 3D scanning software, project planning and <br>performing research for upcoming projects.<br> I gained a lot of experience in Logitech and thoroughly enjoyed my time there</p>
+        <a href="https://www.logitech.com/en-us">
+            <img src="Images/LogitechLogo.png" alt="Logitech Logo" width="300" height="100">
+        </a>
+        <p> In 2017 I did my Work Experience in Logitech in Cork. I was involved in a number of projects including 3D scanning software, project planning and performing research for upcoming projects. I gained a lot of experience in Logitech and thoroughly enjoyed my time there</p>
         
         </section>
-        <aside>
+
+        <section class='volunteering'>
             <h2> <em> Volunteering </em> </h2>
                 <ul>   
                     <li><h4> Scouts</h4>
                         <ul type="square">
-                            <li> I volunteer as a Venturer Scout Leader in the 43rd Scout Troop Bishopstown </li>
+                            <li> 
+                                <p>I volunteer as a Venturer Scout Leader in the 43rd Scout Troop Bishopstown
+                                   I have been a member of Scouting Ireland since I was 12 and I wanted to give something 
+                                   back so I decided to become a Venturer Scout Leader
+                                </p></li>
+                            
                         </ul>
+                        <aside>
+                            <a href="https://www.scouts.ie/">
+                                <img src="Images/SILogo.png" alt="Scouting Ireland Logo" width="300" height="100" >
+                            </a>
+                        </aside>
                     </li>
 
                     <li><h4> Water Safety</h4>
                         <ul type="square">
-                            <li> I am also involved in Irish Water Safety. <br> I currently volunteer as a water safety instructor in Brookfield Leisure Centre </li>
+                            <li> I am also involved in Irish Water Safety. I currently volunteer as a water safety instructor in Brookfield Leisure Centre </li>
                         </ul>
                     </li>
                 </ul>
-        </aside>
+        </section>
     </body>
 </html>
