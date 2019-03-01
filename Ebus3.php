@@ -11,8 +11,8 @@
         </header>
         <?php
         session_start();
-        $totalValue = $_POST['txtTotal'];
-        $fullNameValue = $POST['txtName'];
+        $totalValue2 = $_POST['txtTotal'];
+        $fullNameValue = $_POST['txtName'];
         echo "The name is: ".$fullNameValue.".";
         echo"<hr></hr>";
         echo "The total value is: ".$totalValue2.".";

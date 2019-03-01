@@ -5,7 +5,7 @@ $totalValue2 = "";
 /* 
  *Create a sesion variable for the mobile number
  */
-$totalValue = $_POST['txtTotal'];
+$totalValue2 = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
 $_SESSION['txtTotal'] = $totalValue2;
 
@@ -63,10 +63,10 @@ $_SESSION['txtTotal'] = $totalValue2;
                         </tr>
                         <tr>
                             <td>Password</td>
-                            <td><input type="text" id="txtPassword" name="txtPassword" value="" /></td>
+                            <td><input type="password" id="txtPassword" name="txtPassword" value="" maxlength="4" /></td>
                         </tr>
                         <tr>
-                            <td><input type="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue;?>"/></td>
+                            <td><input type="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue2;?>"/></td>
                         </tr>
                     </table>
                 </center>
