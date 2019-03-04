@@ -8,11 +8,10 @@ $_SESSION['txtTotal'] = $totalValue;
     <head>
         <meta charset="utf-8" />
         <title>Purchase Service</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
         <link rel="stylesheet" href="mystyle.css" type="text/css" />
         <link rel="stylesheet" href="OrangeButton.css" type="text/css" />
         <style>
-            .options {
+            .centering {
               border: 5px solid white;
               width: 600px;
               padding: 10px;
@@ -51,14 +50,13 @@ $_SESSION['txtTotal'] = $totalValue;
         <hr/>
         <div class="centering">
         <center class="options"> 
-        <center>
             <table cellspacing="10">
                 <tr>
                     <td><b>Service</b></td> 
                 </tr>
                 <tr>
                     <td>Blockchain</td>
-                    <td><input type="radio" id="Blockchain" name="rdoGroup" value="1000" /></td>
+                    <td><input type="radio" id="Blockchain" name="rdoGroup" value="1000" required/></td> <!--The required attribute makes it so one radio button must be selected -->
                 </tr>
                 <tr>
                     <td>Robotics(Autonomy)</td>
@@ -73,10 +71,10 @@ $_SESSION['txtTotal'] = $totalValue;
         <br/>
             <center>
                  <table cellspacing="10">
-            <tr>
+                <tr>
                     <td><b></b></td>
                     <td><b>Amount</b></td>
-            </tr>
+                </tr>
                 <tr>
                     <td>Sub Total</td>
                     <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>
@@ -96,16 +94,16 @@ $_SESSION['txtTotal'] = $totalValue;
             </table>
         </center>
         
-        <br />
+        <br/>
             <center>
-                <input class="calc" type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/> </br> </br>
+                <input class="calc" type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount" required/> </br> </br>
                 <input class="clear" type="button" name="btnClear" id="btnClear" onclick="Clear()" value="Clear"/> </br> </br>
-            <input class="proceed" type="submit" name="btnProceed" id="btnProceed" onclick="" value="Proceed"/>
-        </center>
-            </form>
+                <input class="proceed" type="submit" name="btnProceed" id="btnProceed" onclick="" value="Proceed" />
+            </center>
+        </form>
         </div>
         </div>
-        </center>
+        
         
             <script type="text/javascript">
                 function calcSub(){
@@ -154,7 +152,7 @@ $_SESSION['txtTotal'] = $totalValue;
                     document.getElementById("txtVAT").value="";
                     document.getElementById("txtTotal").value="";
                 }
-                    
+                
             </script>
     </body>
     </html>

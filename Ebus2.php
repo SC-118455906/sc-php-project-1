@@ -1,12 +1,14 @@
 <?php
 session_start(); 
 $fullNameValue = "";
+$phoneNumber = "";
 $totalValue2 = ""; 
 /* 
  *Create a sesion variable for the mobile number
  */
 $totalValue2 = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
+$_SESSION['txtNum'] = $phoneNumber;
 $_SESSION['txtTotal'] = $totalValue2;
 
 /** 
@@ -42,8 +44,8 @@ $_SESSION['txtTotal'] = $totalValue2;
     </head>
     <body>
         <header>
-                    <h1>Personal Details</h1>
-                     <button type="button" onclick= "window.location.href='Ebus1.php'" class='button'>Back</button>
+            <h1>Personal Details</h1>
+            <button type="button" onclick= "window.location.href='Ebus1.php'" class='button'>Back</button>
         </header>
         <div class="form">
             <form name="Details" method="post" action="eBus3.php">
@@ -55,15 +57,15 @@ $_SESSION['txtTotal'] = $totalValue2;
                         </tr>
                         <tr>
                             <td>Name</td>
-                            <td><input type="text" id="txtName" name="txtName" value="" /></td>
+                            <td><input type="text" id="txtName" name="txtName" value="" required/></td>
                         </tr>
                         <tr>
                             <td>Phone Number</td>
-                            <td><input type="text" id="txtNum" name="txtNum" value="" /></td>
+                            <td><input type="text" id="txtNum" name="txtNum" value="" required id="extra7" name="extra7" onkeypress="return isNumber(event)"/></td>
                         </tr>
                         <tr>
                             <td>Password</td>
-                            <td><input type="password" id="txtPassword" name="txtPassword" value="" maxlength="4" /></td>
+                            <td><input type="password" id="txtPassword" name="txtPassword" value="" maxlength="4" required/></td>
                         </tr>
                         <tr>
                             <td><input type="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue2;?>"/></td>
@@ -75,6 +77,16 @@ $_SESSION['txtTotal'] = $totalValue2;
                 </center>
             </form>
         </div>
+        <script> // This code was adapted from: https://stackoverflow.com/questions/7295843/allow-only-numbers-to-be-typed-in-a-textbox */
+            function isNumber(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+        </script>
     </body>
 </html>
         
