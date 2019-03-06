@@ -48,7 +48,7 @@ $_SESSION['txtTotal'] = $totalValue2;
             <button type="button" onclick= "window.location.href='Ebus1.php'" class='button'>Back</button>
         </header>
         <div class="form">
-            <form name="Details" method="post" action="eBus3.php">
+            <form name="Details" method="post" action="Ebus3.php">
                 <center>
                     <table cellspacing="10">
                         <tr>
