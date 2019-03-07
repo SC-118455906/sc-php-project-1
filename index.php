@@ -76,6 +76,8 @@ and open the template in the editor.
         <p>Cronin Tech offers smart, efficient and cost-effective solutions to your technical problems. </p>
         <p>Our motto is 'Keep it Simple' and our solutions do just that by offering you the easiest, most simple solution to whatever problem you may have </p>
         <p>Cronin Tech was started in 2019 by Sean Cronin. It grew rapidly and now has locations around the world and employs nearly 2000 staff. Their headquarters are located in Cork, Ireland. </p>
+        <p> Our website is <a href="http://sc-php-project-1.herokuapp.com">here</a>  </p> <!-- This is the link to my Heroku Website -->
+        <p> Here is our <a href="https://github.com/SC-118455906/sc-php-project-1"> code</a> </p> <!-- This is the link to my Github --> 
         </section>
     </body>
 </html>
